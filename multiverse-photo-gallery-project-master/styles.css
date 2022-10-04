@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 14.6667px;
+    font-style: normal;
+    line-height: 24.2px;
+    color: #a0a0a1;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+h1{
+    font-size: 14.6667px;
+    line-height: 14.6667px;
+    color: #a0a0a1;
+}
+
+h2{
+    font-size: 11.7333px;
+    line-height: 17.6px;
+    color: #ffffff;
+}
+
+nav{
+    background-color: #242629;
+    width: 100%;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1{
+    text-transform: uppercase;
+}
+
+nav .info-icon{
+    width: 24px;
+    height: 24px;
+    vertical-align:middle;
+}
+
+main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0;
+}
+
+main .img-container{
+    position: relative;
+}
+
+.img-container img{
+    height: 100%;
+    width: 100%;
+}
+
+.img-container .title{
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+}
+
+
+@media screen and (max-width: 500px) {
+    main{
+        grid-template-columns: auto;
+    }
+}
+
+
+@media screen and (max-width: 885px) and (min-width: 500px) {
+    main{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    main{
+        grid-template-columns: auto auto auto auto;
+    }
+}
